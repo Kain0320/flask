@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DnD Generator</title>
+</head>
+<body>
+    <h1>DnD Character Generator</h1>
+    <form action="/generate" method="POST">
+        <label for="race">Race:</label>
+        <select name="race" id="race">
+            <option value="Human">Human</option>
+            <option value="Elf">Elf</option>
+            <option value="Dwarf">Dwarf</option>
+            <option value="Tiefling">Tiefling</option>
+            <option value="Dragonborn">Dragonborn</option>
+            <option value="Gnome">Gnome</option>
+            <option value="Githe">Githe</option>
+            <option value="Halfling">Halfling</option>
+            <option value="Kabold">Kabold</option>
+
+        </select>
+        <br>
+        <label for="class">Class:</label>
+        <select name="class" id="class">
+            <option value="Fighter">Fighter</option>
+            <option value="Wizard">Wizard</option>
+            <option value="Rogue">Rogue</option>
+            <option value="Cleric">Cleric</option>
+            <option value="Barbarian">Barbarian</option>
+            <option value="Bard">Bard</option>
+            <option value="Druid">Druid</option>
+            <option value="Monk">Monk</option>
+            <option value="Paladin">Paladin</option>
+            <option value="Ranger">Ranger</option>
+            <option value="Sorcerer">Sorcerer</option>
+            <option value="Warlock">Warlock</option>
+
+        </select>
+        <br>
+        <button type="submit">Generate Character</button>
+    </form>
+</body>
+</html>

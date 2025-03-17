@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generated Character</title>
+</head>
+<body>
+    <h1>Generated Character</h1>
+    <p><strong>Name:</strong> {{ character.name }}</p>
+    <p><strong>Race:</strong> {{ character.race.name }}</p>
+    <p><strong>Class:</strong> {{ character.char_class.name }}</p>
+    <p><strong>Stats:</strong></p>
+    <ul>
+        {% for stat, value in character.stats.items() %}
+            <li>{{ stat }}: {{ value }}</li>
+        {% endfor %}
+    </ul>
+    <p><strong>Inventory:</strong></p>
+    <ul>
+        {% for item in character.inventory %}
+            <li>{{ item.describe() }}</li>
+        {% endfor %}
+    </ul>
+    <a href="/">Generate Another Character</a>
+</body>
+</html>
+
+<a href="/download_pdf" target="_blank">Download as PDF</a>
